@@ -96,4 +96,89 @@ for i in lista2:
 #Começa em 10, conta até 20 e de 3 em 3
 for i in range(10,20,3):
     print(i)
+
+
+#Strings
+
+a = "Igor"
+b = "Mariana"
+
+concatenar = a + " " + b
+
+print (concatenar)
+
+#Saber tamanho da string
+
+tamanho = len(concatenar)
+
+print(tamanho)
+
+#Navegação pelo índice
+
+print(a[0])
+print(a[1])
+print(a[2])
+print(a[3])
+
+#Imprimindo parte de uma string
+
+    # O primeiro valor é o que inicia e o : é para indicar até onde vai imprimir
+print(concatenar[2:9])
+
+    #Parte 2
+a = "Igor"
+b = "Mariana"
+
+concatenar = a + " " + b + " "
+
+print(concatenar)
+     #Função lower()
+concatenar = concatenar.lower()
+print(concatenar)
+     #Função upper()
+concatenar = concatenar.upper()
+print(concatenar)
+    #Função strip()
+concatenar = concatenar.strip()
+print(concatenar)
+
+    #Função split()
+minha_string = "O rato roeu a roupa do rei de Roma"
+
+#minha_string = minha_string.split("r")
+#print(minha_string)   
+    #Função busca/find(). Exibe o índice que a palavra está;
+busca = minha_string.find("rei")
+print(busca)
+    #Imprimindo todo o texto da string dps da palavra "rei"
+print(minha_string[busca:])
+    #Se não encontra a substring, retorna -1
+busca = minha_string.find("rainha")
+print(busca)
+
+    #Função replace
+minha_string = minha_string.replace("o rei", "a rainha")
+
+print(minha_string)
+
 """
+#Funções
+
+def soma(x,y):
+    return x+y
+def multiplicacao(x,y):
+    return x*y
+
+s = soma(2,3)
+m = multiplicacao(3,4)
+
+print(s)
+print(m)
+
+
+    #recursividade
+print(soma(s,m))
+
+
+#Manipulação de arquivos
+
