@@ -3,14 +3,22 @@ Escreva um programa que resolva uma
 equação de segundo grau
 """
 
-a = 2
-b = 8 
-c = -24
+from math import sqrt
 
-delta = (b*b) - (4 * (a)*(c))
+a = int(input("Digite o valor de A: "))
+b = int(input("Digite o valor de B: "))
+c = int(input("Digite o valor de C: "))
 
-x1 = (-b - (delta**(1/2)))/ (2*a)
-x2 = (-b + (delta**(1/2)))/ (2*a)
+delta = b**2 - (4*a*c)
 
-print(x1)
-print(x2)
+print(delta)
+
+if delta < 0:
+    print("Delta negativo")
+else:
+    raiz = sqrt(delta)
+    print(raiz)
+    x1 = (-b + raiz)/ (2*a)
+    x2 = (-b - raiz)/ (2*a)
+    
+    print("Raizes: ", x1, x2)
